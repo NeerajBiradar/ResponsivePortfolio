@@ -1,0 +1,35 @@
+.nav{
+    background-color: black;
+}
+ 
+.button {
+    height: 40px;
+    width: 100px;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    .slider {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        .el {
+            text-transform: uppercase;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            align-items: center; /* Center vertically */
+            justify-content: center;
+            color: white;
+            
+            &:nth-of-type(2) {
+                position: absolute;
+                top: 100%;
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+}
